@@ -1,20 +1,17 @@
-/* Global Styles */
 body {
   min-height: 2000px;
 }
 
 h2 {
-  font-style: normal; /* Pastikan gaya font adalah normal */
+  font-style: normal;
 }
 
-/* Jumbotron */
 .jumbotron {
-  padding: 4rem 2rem; /* Padding yang lebih besar */
-  min-height: 300px; /* Menentukan tinggi minimum */
+  padding: 4rem 2rem;
+  min-height: 300px;
   background-color: rgba(121, 121, 121, 0.141);
 }
 
-/* Card Transitions */
 #projects .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -30,18 +27,22 @@ h2 {
 }
 
 #projects .card:hover .card-text {
-  color: #00000057; /* warna aksen pas hover */
+  color: #00000057;
 }
 
 #projects {
-  margin-bottom: 100px; /* Menambahkan ruang lebih banyak setelah Project */
+  margin-bottom: 100px;
 }
 
 #contact {
-  margin-top: 40px; /* Menambah jarak antara Project dan Contact */
+  margin-top: 40px;
+  background-color: rgba(248, 248, 248, 0.8);
+  padding: 40px 0;
+  margin-bottom: 0;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Untuk teks judul dan deskripsi di jumbotron */
 .name-title {
   font-weight: 400;
   font-size: 2rem;
@@ -60,7 +61,6 @@ h2 {
   margin-top: 15px;
 }
 
-/* Responsif di mobile */
 @media (max-width: 576px) {
   .name-title {
     font-size: 1.3rem;
@@ -81,17 +81,16 @@ h2 {
   }
 }
 
-/* Desktop Styles */
 .name-title {
-  font-size: 4rem; /* Ukuran font yang sama untuk keduanya */
+  font-size: 4rem;
   font-weight: 300;
-  line-height: 1.1; /* Jarak antar baris lebih rapat */
+  line-height: 1.1;
 }
 
 .name-title span {
-  font-size: 4rem; /* Sama dengan ukuran "Benedict Amadeus" */
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 1.1; /* Jarak antar baris lebih rapat */
+  line-height: 1.1;
 }
 
 .name-subtitle {
@@ -100,14 +99,13 @@ h2 {
   margin-top: 1rem;
 }
 
-/* Responsif di layar besar */
 @media (min-width: 768px) {
   .name-title {
-    font-size: 4.5rem; /* Ukuran font lebih besar di layar besar */
+    font-size: 4.5rem;
   }
 
   .name-title span {
-    font-size: 4.5rem; /* Ukuran yang sama di layar besar */
+    font-size: 4.5rem;
   }
 
   .name-subtitle {
@@ -115,18 +113,17 @@ h2 {
   }
 
   .jumbotron .left-text {
-    padding-left: 200px; /* Geser lebih ke kanan */
+    padding-left: 200px;
   }
 }
 
-/* Responsif untuk mobile */
 @media (max-width: 576px) {
   .name-title {
-    font-size: 2.5rem; /* Ukuran font lebih kecil di perangkat mobile */
+    font-size: 2.5rem;
   }
 
   .name-title span {
-    font-size: 2.5rem; /* Ukuran yang sama untuk "Sandro" di perangkat mobile */
+    font-size: 2.5rem;
   }
 
   .name-subtitle {
@@ -134,16 +131,7 @@ h2 {
   }
 }
 
-/* Styling untuk Contact Section */
-#contact {
-  background-color: rgba(248, 248, 248, 0.8); /* Latar belakang semi-transparan */
-  padding: 40px 0;
-  margin-bottom: 0; /* Menghapus margin bawah agar nempel ke footer */
-  background-size: cover;
-  background-position: center;
-}
-
-/* Kontainer utama */
+/* Styling untuk contact section */
 .contact-container {
   display: flex;
   align-items: center;
@@ -155,10 +143,9 @@ h2 {
   margin: 0 auto;
 }
 
-/* Profil */
 .contact-profile {
   display: flex;
-  align-items: center; /* Menyusun konten secara horizontal */
+  align-items: center;
   gap: 20px;
 }
 
@@ -177,83 +164,120 @@ h2 {
 
 .contact-text .text-line {
   display: block;
-  text-align: left; /* Teks rata kiri */
+  text-align: left;
 }
 
-/* Tombol Kontak */
 .contact-button {
-  display: block; /* Agar tombol dapat diberi margin otomatis */
+  display: block;
   padding: 12px 24px;
-  background-color: #000; /* Warna dasar tombol */
+  background-color: #000;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-left: auto; /* Geser ke kanan */
-  margin-right: 0; /* Pastikan tombol tidak terlalu jauh dari kanan */
-  width: max-content; /* Sesuaikan lebar tombol dengan isi teks */
+  margin-left: auto;
+  margin-right: 0;
+  width: max-content;
 }
 
 .contact-button:hover {
-  color: #cfcfcf; /* warna teks saat hover */
+  color: #cfcfcf;
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background-color: #222; /* Optional: bisa buat tombol jadi sedikit lebih terang saat hover */
+  background-color: #222;
 }
 
-/* Grup informasi kontak */
 .contact-info-group {
   display: flex;
   gap: 20px;
   margin-top: 20px;
-  padding-left: 160px; /* Atau sesuaikan */
+  padding-left: 160px;
 }
 
-/* Link Kontak */
 .contact-info {
   display: inline-block;
-  margin-right: 12px; /* Space antar chip */
+  margin-right: 12px;
   border: 1px solid #000;
   border-radius: 30px;
   background-color: transparent;
   font-size: 0.875rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
 }
 
-/* Pastikan link di dalamnya mewarisi warna & padding */
 .contact-info a {
   display: block;
   padding: 6px 12px;
-  color: inherit; /* Wariskan warna #000 dari parent */
-  text-decoration: none; /* Hilangkan underline */
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Hover pada parent .contact-info */
 .contact-info:hover {
-  transform: scale(1.05);
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #000;
+  color: #fff;
 }
 
-/* Kalau mau juga hover pada link-nya sendiri */
 .contact-info a:hover {
-  color: #000; /* Tetap hitam saat hover */
+  color: #000;
 }
 
-/* Responsif */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 1.5rem;
   }
 
   .contact-button {
     margin-left: 0;
     margin-top: 20px;
+    width: 80%;
+  }
+
+  .contact-text {
+    font-size: 1.5rem;
+  }
+
+  .contact-profile {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-info-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0;
   }
 }
 
-/* Tombol lainnya */
+/* Tambahan jumbotron agar responsif */
+@media (max-width: 768px) {
+  .jumbotron img {
+    max-height: 50vh !important;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .left-text {
+    padding-left: 1rem !important;
+    margin-top: 100px !important;
+  }
+
+  .jumbotron .text-white.text-end {
+    padding-right: 1rem !important;
+    margin-top: 100px !important;
+    text-align: left !important;
+  }
+}
+
 .btn {
   padding: 10px 20px;
   background-color: #05050572;
